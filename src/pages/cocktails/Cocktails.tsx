@@ -22,7 +22,6 @@ const Cocktails: FC = () => {
     const [error, setError] = useState<string | null>(null);
     const [selectedLetter, setSelectedLetter] = useState<string>('A');
     const [modalOpenCreate, setModalOpenCreate] = useState<boolean>(false);
-    const [formCocktails, setFormCocktails] = useState(cocktails as ICocktail[]);
     const [massageBoxVariant, setMessageBoxVariant] = useState<string>('')
     const [drinkDataAssets, setDrinkDataAssets] = useState<ICocktail[]>([])
 
@@ -53,7 +52,7 @@ const Cocktails: FC = () => {
         };
 
         getCocktails(selectedLetter, drinkDataAssets);
-    }, [selectedLetter]);
+    }, [selectedLetter, drinkDataAssets]);
 
     const handleSelectLetter = (letter: string) => {
         setSelectedLetter(letter);

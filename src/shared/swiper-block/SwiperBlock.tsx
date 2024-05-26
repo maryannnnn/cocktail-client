@@ -1,5 +1,5 @@
 import './swiper-block.scss'
-import React, { useRef, useState, useEffect, FC } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -37,7 +37,7 @@ const SwiperBlock: FC<SwiperBlockProps> = ({ cocktailImage, ingredientsImages })
                 {images.length > 0 && (
                     images.map((image, index) => (
                         <SwiperSlide>
-                            <img className='' src={image} key={index} />
+                            <img className='' src={image} alt="" key={index} />
                         </SwiperSlide>
                     )))
                 }

@@ -9,7 +9,6 @@ import { selectCategory, selectGlass, selectAlcoholic, selectIngredient } from '
 import Button from "../../shared/btn/Button";
 import Input from "../../shared/input/Input";
 import Select from "../../shared/select/Select";
-import { MessageBox, LoadingBox } from '../../shared/box/boxes';
 import { createNewDrink } from './addNewDrink'
 
 const FormDrinkCreate: FC<FormDrinkCreateProps> = ({ setModalOpenCreate, drinkDataAssets, setDrinkDataAssets, setErrorBox = () => { }, setMessageBoxVariant }) => {
