@@ -66,7 +66,7 @@ const Cocktails: FC = () => {
         <>
             <div className="cocktails">
                 <div className="container">
-                    <h1 className="cocktails__title">Browse Cocktails</h1>
+                    <h1 className="cocktails__title">Browse Cocktailssssssss</h1>
                     <Button className="button" onClick={handleModalCreateOpen} >Add Drink</Button>
                     <AlphabetPagination onSelectLetter={handleSelectLetter} />
                     <div className="cocktails__inner">
